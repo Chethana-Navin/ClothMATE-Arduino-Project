@@ -32,16 +32,25 @@
 
 ## 📊 How It Works
 
-flowchart TD
-    A[Rain Sensor] -->|Detects moisture| B(Arduino Uno)
-    B -->|Sends signal| C{Is it raining?}
-    C -->|YES| D[Activate Retract Relay]
-    C -->|NO| E[Activate Extend Relay]
-    D --> F[DC Motor Retracts]
-    E --> G[DC Motor Extends]
-    F --> H[Clothes Protected]
-    G --> I[Clothes Drying]
 
+### The Process:
+| Step | Component | Action |
+|------|-----------|--------|
+| 1️⃣ | 🌧️ **Rain Sensor** | Detects water on surface |
+| 2️⃣ | 🧠 **Arduino Uno** | Reads sensor signal |
+| 3️⃣ | 🔀 **Decision** | Is rain detected? |
+| 4️⃣ | 🔌 **Relay Module** | Switches motor ON/OFF |
+| 5️⃣ | ⚙️ **DC Motor** | Retracts or extends line |
+| 6️⃣ | 👕 **Clothesline** | Moves to protect clothes |
+
+### Visual Flow:
+
+> **Rain** → Sensor → Arduino → Relay → Motor → **Line Moves**
+
+### Example Scenarios:
+
+- **☔ Raining:** Sensor detects → Line RETRACTS automatically
+- **☀️ Sunny:** No rain detected → Line EXTENDS to dry clothes
 
 ## 🚀 Getting Started
 
