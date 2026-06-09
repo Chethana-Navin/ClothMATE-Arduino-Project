@@ -69,7 +69,7 @@
 
 ## 📹 Demo
 
-[Click here to watch the demo video](./Video/clothMATE-demo.mp4)
+[Click here to watch the demo video](Video/ClothMATE-demo.mp4)
 
 ## 📚 Documentation
 
