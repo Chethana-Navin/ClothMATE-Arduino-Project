@@ -75,7 +75,7 @@
 
 - [Proposal Document](./Documentation/Proposal-Report.pdf)
 - [Progress Report](./Documentation/Progress-Report.pdf)
-- [Presentation Slides](./Presentation/Automated-Cloth-Line-Project (ClothMATE).pptx)
+- [Presentation Slides](./Presentation/Automated-Cloth-Line-Project (ClothMATE).pdf)
 
 ## 👥 Team Members (Group 1.2/18)
 
