@@ -31,16 +31,16 @@
 | Jumper Wires | As needed |
 
 ## 📊 How It Works
-┌─────────────┐ ┌─────────────┐ ┌─────────────┐
-│ Rain Sensor │────▶│ Arduino │────▶│ Relay │
-│ (Input) │ │ (Brain) │ │ (Switch) │
-└─────────────┘ └─────────────┘ └──────┬──────┘
-│
-▼
-┌─────────────┐
-│ DC Motor │
-│ (Actuator) │
-└─────────────┘
+
+flowchart TD
+    A[Rain Sensor] -->|Detects moisture| B(Arduino Uno)
+    B -->|Sends signal| C{Is it raining?}
+    C -->|YES| D[Activate Retract Relay]
+    C -->|NO| E[Activate Extend Relay]
+    D --> F[DC Motor Retracts]
+    E --> G[DC Motor Extends]
+    F --> H[Clothes Protected]
+    G --> I[Clothes Drying]
 
 
 ## 🚀 Getting Started
